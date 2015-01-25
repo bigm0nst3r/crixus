@@ -1,0 +1,12 @@
+
+
+
+1. Search element in infinite sorted array.
+
+  http://stackoverflow.com/questions/12300904/find-an-element-in-an-infinite-length-sorted-array
+
+  set index in order 2^n. binary searching from 2^n - 2^n+1
+
+  increment by 100 and do a binary search
+
+2.
