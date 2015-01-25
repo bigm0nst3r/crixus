@@ -1,4 +1,4 @@
-package nextgreater;
+package coding_qns;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.List;
  * @author Sreejith S
  * @since Jan 25, 2015
  */
-public class Main {
+public class NextGreaterNumber {
 
   public static void main(String[] args) {
 

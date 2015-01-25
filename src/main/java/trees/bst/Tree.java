@@ -1,4 +1,4 @@
-package bst;
+package trees.bst;
 
 /**
  * @author Sreejith S
