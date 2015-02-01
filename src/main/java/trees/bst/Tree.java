@@ -42,4 +42,22 @@ public class Tree {
     }
     return;
   }
+
+
+  public void prefix() {
+    _prefix(rootNode);
+  }
+
+  private void _prefix(Node node) {
+    if (node != null) {
+      if (node.getLeft() != null) {
+        _prefix(node.getLeft());
+      }
+      System.out.println(node.getData());
+      if (node.getRight() != null) {
+        _prefix(node.getRight());
+      }
+    }
+  }
+
 }
