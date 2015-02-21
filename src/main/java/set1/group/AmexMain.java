@@ -48,6 +48,21 @@ public class AmexMain {
     }
 
     System.out.println("***");
+
+    ds = new AmEx<>();
+
+    ds.add("1");
+    ds.add("2");
+    ds.add("3");
+    ds.reverse();
+    ds.add("4");
+    ds.reverse();
+    ds.add("5");
+
+    for (int i = 0; i < 5; i++) {
+      System.out.print(ds.get(i) + " ");
+    }
+
   }
 
 }
