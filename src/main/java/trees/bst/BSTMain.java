@@ -21,10 +21,9 @@ public class BSTMain {
     input[8] = 13;
 
     Tree bst = new Tree();
-    bst.insert(input);
+//    bst.insert(input);
 
-    bst.prefix();
-
+//    bst.prefix();
 
   }
 

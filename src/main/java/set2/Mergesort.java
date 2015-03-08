@@ -19,15 +19,17 @@ public class Mergesort {
 
   private static void mergeSort(int[] input, int[] sortedOp, int left, int right) {
 
-    if(left<right){
+    if (left < right) {
       int center = (left + right) / 2;
       mergeSort(input, sortedOp, 0, center);
-      mergeSort(input, sortedOp, center+1, right);
+      mergeSort(input, sortedOp, center + 1, right);
       merge(input, sortedOp, left, center + 1, right);
     }
   }
 
-  private static void merge(int[] input, int[] sortedOp, int left, int right, int rightEnd) {
+  private static void merge(int[] input, int[] sortedOp, int firstStart, int nextStart,
+                            int rightEnd) {
+
   }
 
 

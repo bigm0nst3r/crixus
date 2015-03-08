@@ -17,7 +17,6 @@ public class Tree {
 
   }
 
-
   public void insert(Node parentNode, Node input) {
     if (this.rootNode == null) {
       this.rootNode = input;
