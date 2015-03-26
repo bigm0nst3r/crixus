@@ -1,5 +1,8 @@
 package structures.tree.binary;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Sreejith S
  * @since Feb 24, 2015
@@ -35,8 +38,7 @@ public class BTree<E extends Comparable> {
   }
 
 
-
-  public void delete(){
+  public void delete() {
 
   }
 
@@ -84,4 +86,34 @@ public class BTree<E extends Comparable> {
     }
     System.out.println(node.getData());
   }
+
+  public List<List<Node<E>>> findAllPaths() {
+    List<List<Node<E>>> paths = new ArrayList<>();
+    _findAllPaths(rootNode, new ArrayList<Node<E>>(), paths);
+    System.out.println("!!");
+    return paths;
+  }
+
+  private void _findAllPaths(Node<E> node, List<Node<E>> _path, List<List<Node<E>>> paths) {
+
+
+    _path.add(node);
+
+
+    if(node.getLeft()==null && node.getRight()==null){
+      paths.add(_path);
+    } else {
+
+      if(node.getLeft()!=null){
+        _findAllPaths(node.getLeft(), new ArrayList<>(_path), paths);
+      }
+
+      if(node.getRight()!=null){
+        _findAllPaths(node.getRight(),new ArrayList<>(_path),paths);
+      }
+    }
+
+  }
+
+
 }
